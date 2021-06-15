@@ -1,2 +1,2 @@
 #!/bin/bash
-HOlBERTON=Betty
+HOlBERTON=Betty | export HOLBERTON=Betty
