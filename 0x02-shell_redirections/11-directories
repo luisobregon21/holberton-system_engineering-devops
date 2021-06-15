@@ -1,0 +1,2 @@
+#!/bin/bashi
+find . -type d | wc -l
