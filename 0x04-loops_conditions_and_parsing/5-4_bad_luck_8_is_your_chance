@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Bash script loops 1 to 10, displays bad luck on 4th loop, good luck on the 8th and the others Best School
+
+num=1
+
+while [ $num -le 10 ]
+do
+  if [ $num == 4 ]
+  then
+      echo "bad luck"
+      ((num++))
+  elif [ $num == 8 ]
+  then
+      echo "good luck"
+      ((num++))
+  else
+      echo "Best School"
+      ((num++))
+  fi
+done
