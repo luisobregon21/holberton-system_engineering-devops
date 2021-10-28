@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Bash script displays different strings depending on iteration
+
+i=1
+
+while [ $i -le 20 ]
+do
+    case $i in
+        4) printf '4\nbad luck from China\n';;
+        9) printf '9\nbad luck from Japan\n';;
+        17) printf '17\nbad luck from Italy\n';;
+        *) echo "$i";;
+    esac
+    ((i++))
+done
