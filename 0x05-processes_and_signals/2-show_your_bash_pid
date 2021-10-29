@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-ps -afux | grep bash
+# Gets PIDS
 # shellcheck disable=SC2009
+ps -afux | grep bash
