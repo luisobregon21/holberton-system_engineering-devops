@@ -2,6 +2,6 @@
 # displays content of the current directory
 
 for content in *
-	do
-    echo "$content" | cut -f2 -d "-"
-done
+    do
+    	echo "$content" | cut -f2 -d "-"
+    done
