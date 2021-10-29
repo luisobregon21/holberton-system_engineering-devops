@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-echo "$$"
+# displays its own PID
+echo $$
