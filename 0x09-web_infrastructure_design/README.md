@@ -27,7 +27,7 @@
 * Once the resolver reaches the name server, the Resolver finds its answer to which IP address corresponds to “foobar.com” because when you register a new domain, like “foobar.com” you have to manually register the name and communicate it to the TLD registry.
 
 ## DNS Drawing
-<img src="images/DNS.jpeg" width="200" height="400" />
+![](images/DNS.jpeg)
 
 ## Monitoring
 
@@ -38,7 +38,7 @@
 
 2. **Server monitoring**: Which is reading the data about your virtual or physical server and making sure they are not overloaded
 
-<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F614e4d59758e57d6c1f55f01%2FSystem-Security-Specialist-Working-at-System-Control-Center--Room-is-Full-of-Screens%2F960x0.jpg%3Ffit%3Dscale" width="200" height="400" />
+<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F614e4d59758e57d6c1f55f01%2FSystem-Security-Specialist-Working-at-System-Control-Center--Room-is-Full-of-Screens%2F960x0.jpg%3Ffit%3Dscale" width="400" height="200" />
 
 ### Some highly used monitoring tools:
 **NewRelic,** this JavaScript based agent will collect information such as how quickly your website loads in a browser, which is a detailed analysis at every level of the stack. If your site is loading too slow or giving errors it will even alert you of this.
