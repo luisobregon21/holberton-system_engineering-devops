@@ -38,7 +38,7 @@
 
 2. **Server monitoring**: Which is reading the data about your virtual or physical server and making sure they are not overloaded
 
-![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F614e4d59758e57d6c1f55f01%2FSystem-Security-Specialist-Working-at-System-Control-Center--Room-is-Full-of-Screens%2F960x0.jpg%3Ffit%3Dscale =50x50)
+![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F614e4d59758e57d6c1f55f01%2FSystem-Security-Specialist-Working-at-System-Control-Center--Room-is-Full-of-Screens%2F960x0.jpg%3Ffit%3Dscale){:height="50%" width="50%"}
 
 ### Some highly used monitoring tools:
 **NewRelic,** this JavaScript based agent will collect information such as how quickly your website loads in a browser, which is a detailed analysis at every level of the stack. If your site is loading too slow or giving errors it will even alert you of this.
