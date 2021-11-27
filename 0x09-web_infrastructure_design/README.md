@@ -28,3 +28,25 @@
 
 ## DNS Drawing
 ![](images/DNS.jpeg)
+
+## Monitoring
+
+*"You cannot fix or improve what you cannot measure", You need to know how your application and your server is doing to know if there's something wrong.* 
+
+### Web stack monitoring can be divided into two categories:
+1. **Application monitoring**: which is getting data from your running application and making sure its behaving as intended
+
+2. **Server monitoring**: Which is reading the data about your virtual or physical server and making sure they are not overloaded
+
+![](https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F614e4d59758e57d6c1f55f01%2FSystem-Security-Specialist-Working-at-System-Control-Center--Room-is-Full-of-Screens%2F960x0.jpg%3Ffit%3Dscale)
+
+### Some highly used monitoring tools:
+**NewRelic,** this JavaScript based agent will collect information such as how quickly your website loads in a browser, which is a detailed analysis at every level of the stack. If your site is loading too slow or giving errors it will even alert you of this.
+
+**DataDog**, allows you to measure everything with graphs, it gathers performance data from all of your application components. You can customize when DataDog will alert you.
+
+**Uptime Robot**, a simple service that will check that your website is responding from multiple locations in the world. 
+
+**Nagios**, Widely used but outdated.
+
+**WaveFront**, cutting edge, tries to analyze anything that can produce a data point. It has a query language to manipulate and analyze the data. This and similar tools is what the top tier companies use internally.
