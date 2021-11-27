@@ -59,7 +59,7 @@ Looks something like this:
 	***Request ---> web server ---> renders the page in your browser***
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20190927155217/webserver.png" width="400" height="200"/>
 
-  * ** Request**: When you click enter in your URL “foobar.com” a request is sent to a machine that has a piece of software called web server
+  * **Request**: When you click enter in your URL “foobar.com” a request is sent to a machine that has a piece of software called web server
   * **Web server**: this software knows how to get the request, piece together the webpage and send it back to the browser that requested it.
   * **Browser**: Then the server gets the information back and proceeds to render it. An example of two commonly used web servers software are **Apache** and **NGINX**
 
