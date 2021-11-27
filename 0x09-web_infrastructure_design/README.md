@@ -50,3 +50,16 @@
 **Nagios**, Widely used but outdated.
 
 **WaveFront**, cutting edge, tries to analyze anything that can produce a data point. It has a query language to manipulate and analyze the data. This and similar tools is what the top tier companies use internally.
+
+## Web Server
+Not to be confused with a server, a web server is a **software that delivers web pages**, and a server is an actual computer.
+
+A web server is a piece of software that puts together all the pieces that make up a web page and sends them to your web browser.
+Looks something like this:
+	***Request ---> web server ---> renders the page in your browser***
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20190927155217/webserver.png" width="400" height="200"/>
+
+  * ** Request**: When you click enter in your URL “foobar.com” a request is sent to a machine that has a piece of software called web server
+  * **Web server**: this software knows how to get the request, piece together the webpage and send it back to the browser that requested it.
+  * **Browser**: Then the server gets the information back and proceeds to render it. An example of two commonly used web servers software are **Apache** and **NGINX**
+
