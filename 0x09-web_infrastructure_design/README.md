@@ -87,6 +87,6 @@ Imagine that your computer is an office, Its number is 192.168.1.1 , but you wan
 
 At the same time someone else calls but need to talk to the boss, which is on the :433 extension, then you dial 192.168.1.1:433 and you are calling the boss directly. 
 
-<img src="https://i0.wp.com/ipwithease.com/wp-content/uploads/2020/06/IP-ADDRESS-AND-PORT-NUMBER.jpg" width="200" height="200"/>
+<img src="https://i0.wp.com/ipwithease.com/wp-content/uploads/2020/06/IP-ADDRESS-AND-PORT-NUMBER.jpg" width="400" height="200"/>
 
 In networking terms is really similar but you need to know that TCP/IP and both TCP and UPD use a set of ports that work together with IP addresses. There are more than 60k ports between udp and tcp, and some of them are reserved for common applications as an standard, say HTTP which used port :80 or https which uses port :443
