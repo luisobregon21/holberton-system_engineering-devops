@@ -150,3 +150,23 @@ There are both types of load balancers; hardware and software. They offer a mult
   * **Observed**: Is a combination of Fastest and Least connections. With this method available, servers are ranked based on a combination of the number of connections they are currently handling and how fast they are responding.
   * **Predictive**: Like Observed but taken to the next level. It tries to get ahead of the curve by analyzing the trend of ranking over time... determining whether a server performance is currently improving or declining.
 >> <img src="https://www.dnsstuff.com/wp-content/uploads/2020/01/the-five-most-common-balancing-methods-1024x536.jpg" width="400" height="200"/>
+
+## Servers
+Servers are basically computers, or a collection of many computers over the network that are there to provide functionality or data for other programs or devices. They are normally at a place called “datacenter”
+
+>> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Server-based-network.svg/440px-Server-based-network.svg.png" width="300" height ="200"/>
+
+In the diagram above, you can see one server providing functionality to six computers over a network.
+
+There are multiple types of servers like:
+* DNS
+* File servers
+* Web Server
+* Index/search
+* proxy servers
+* directory
+* game servers. Etc.
+
+## What is a database
+A DATABASE Is information that  is set up for **easy access, management and updating. **They are used for storing, maintaining and accessing any sort of data.
+
