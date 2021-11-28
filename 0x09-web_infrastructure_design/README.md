@@ -63,3 +63,30 @@ Looks something like this:
   * **Web server**: this software knows how to get the request, piece together the webpage and send it back to the browser that requested it.
   * **Browser**: Then the server gets the information back and proceeds to render it. An example of two commonly used web servers software are **Apache** and **NGINX**
 
+## Network basics
+
+### What is a protocol
+A **protocol ** is a set of rules that both ends must have to share information over a network. Regardless of the devices underlying the infrastructure, as long as both parties have the same protocol they can communicate with each other.
+
+In the OSI model, each layer has one or more network protocols governing the layer activities.
+### What is an IP address
+Is like the physical address of a home or business, an IP address provides an address for a device in a network so data can be sent from and to the device.
+
+### What is TCP/IP
+  * Is a suite of communication protocols that it’s used to interconnect devices on the internet.
+  * It specifies how data is exchanged over the internet, breaks it into : packets, addressed, transmitted, routed and received at the destination.
+  * It has two main protocols, TCP defines hows applications can create channels of communication across a network. It also manages how a message is assembled into smaller packets before they are transmitted over the internet and reassembled in the right order at the destination.
+  * IP defines how to address and how to route each packet to make sure it reaches the right destination.
+  * It also has other protocols to complete its functionality, like **subnet mask, NAT, HTTP, HTTPS and FTP.**
+  * **HTTP** handles the communication between a web server and a browser
+
+### What is an internet protocol IP port
+PORT numbers allow different applications to share network resources on the same computer. They work like telephone extensions (510, 787...etc). 
+
+Imagine that your computer is an office, Its number is 192.168.1.1 , but you want to reach the receptionist. To do that you need their extension, say :8080. So to reach the receptionist you dial 192.168.1.1:8080. 
+
+At the same time someone else calls but need to talk to the boss, which is on the :433 extension, then you dial 192.168.1.1:433 and you are calling the boss directly. 
+
+<img src="https://i0.wp.com/ipwithease.com/wp-content/uploads/2020/06/IP-ADDRESS-AND-PORT-NUMBER.jpg"/>
+
+In networking terms is really similar but you need to know that TCP/IP and both TCP and UPD use a set of ports that work together with IP addresses. There are more than 60k ports between udp and tcp, and some of them are reserved for common applications as an standard, say HTTP which used port :80 or https which uses port :443
