@@ -187,3 +187,28 @@ A DATABASE Is information that  is set up for **easy access, management and upda
 | Servers only web-based applications | Server web and enterprise-based application |
 | No support for multi-threading | Uses multi-threading to support multiple request in parallel |
 | Facilitates web traffic that is not very resource intensive | Facilitates longer running processes that are very resource-intensive |
+
+
+## DNS record types
+* A(address) records:
+>> *Is the most basic and most commonly used DNS record type.
+>> * It is used to translate human friendly domain names such as “foobar.com” to IP addresses such as 233.222.1.34
+>> * They are the DNS server equivalent of the hosts file.
+
+* CNAME
+>> * They are domain name aliases. Computers on the internet can perform multiple roles such as web-servers and ftp-server. So two CNAME-records are defined “www.foobar.com” = “computer1.foobar.com” and “ftp.foobar.com” = “computer1.foobar.com”
+>> * The most common use case of the CNAME record types is to provide access to a web-server using both “www.foobar.com” and “foobar.com”. Meaning it will work with and without the www prefix.
+>> * CNAME is also used for when you want to rename the name of a website and temporarily allow users to access the page using both, the older and the newer name.
+>> * A CNAME should always point to an A-record and never to itself or another CNAME
+
+* MX
+>> * MX records are usually used to specify the email servers responsible for a domain name.
+>> * When sending an emai to “user@foobar.com” the email server must first look up for any MX records for “foobar.com” to see which email servers handles incoming emails for “foobar.com”
+>> * This could be “mail.foobar.com” or someone else’s mail like “mail.isp.com” After this it looks up the **A record** for that email server name to connect to its IP address.
+
+* TXT
+>> * It lets a domain administrator enter text into the DNS. The TXT record was originally intended as a place for human readable notes. However. Not it is also possible to put some machine readable content in there. One domain can have many TXT records
+
+<img src="https://desk.zoho.com/DocsDisplay?zgId=6017018&mode=inline&blockId=ahspd33c576901a764b2eb7a18ca4e428753f" width="500" height="200">
+
+>>  **These days the two most important uses for TXT record types are email spam prevention and domain ownership.** 
