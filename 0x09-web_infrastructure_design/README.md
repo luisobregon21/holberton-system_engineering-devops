@@ -176,7 +176,7 @@ A DATABASE Is information that  is set up for **easy access, management and upda
 ## What is the difference between a web server and an app server
   * Web servers have no server side logic, they serve non-dynamic or static content.
   * They accept and fulfill requests from clients for static content, html pages, files, images, videos etc. Web server handle HTTP request only
-  
+  ![](images/webserver_vs_appserver.svg)
   * APP servers have server side logic that interact with the database, they respond with dynamic content.. 
   * They expose business logic to the clients which generates dynamic content. It is a framework that transforms data to provide the specialized functionality offered by a business, service, or application. Application servers enhance the interactive parts of a website that can appear differently depending on the context of the request
 
