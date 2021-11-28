@@ -133,3 +133,19 @@ The major benefits of a HTTPS certificate are:
 * Customer information, like credit card numbers, is encrypted and cannot be intercepted
 * Visitors can verify you are a registered business and that you own the domain
 * Customers are more likely to trust and complete purchases from sites that use HTTPS
+
+
+## Load Balancer
+A load balancer is a way to handle huge amounts of traffic by distributing the workload dynamically between servers. 
+
+There are both types of load balancers; hardware and software. They offer a multitude of advantages and are basically a must for any operation that pretends to be scaled and have big growth. 
+
+### Different load balancing algorithms
+  * **Random**: this method randomly distributes the load across the available servers. 
+  * **Round Robin**:  passes each new connection request to the next server in line, eventually distributing the load evenly between all servers.
+  * **Weighted Round Robin (aka RATIO)**: Like round robin but with a twist, each machine gets request over time proportional to its computing capabilities, which you define by the ratio weight you give to each machine.
+  * **Dynamic Round Robin (aka Dynamic Ratio)**: Like round robin but weights are based on continuous monitoring of the servers and therefore the weights/ratio are constantly changing.
+  * **Fastest**: It passes a new connection based on the fastest response time of all available servers
+  * **Least connections**: The system passes a new connection to the server with the least connections.
+  * **Observed**: Is a combination of Fastest and Least connections. With this method available, servers are ranked based on a combination of the number of connections they are currently handling and how fast they are responding.
+  * **Predictive**: Like Observed but taken to the next level. It tries to get ahead of the curve by analyzing the trend of ranking over time... determining whether a server performance is currently improving or declining.
