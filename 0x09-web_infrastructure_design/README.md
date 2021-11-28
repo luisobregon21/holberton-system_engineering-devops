@@ -170,3 +170,20 @@ There are multiple types of servers like:
 ## What is a database
 A DATABASE Is information that  is set up for **easy access, management and updating. **They are used for storing, maintaining and accessing any sort of data.
 
+## What is a database
+A DATABASE Is information that  is set up for **easy access, management and updating. **They are used for storing, maintaining and accessing any sort of data.
+
+## What is the difference between a web server and an app server
+  * Web servers have no server side logic, they serve non-dynamic or static content.
+  * They accept and fulfill requests from clients for static content, html pages, files, images, videos etc. Web server handle HTTP request only
+  
+  * APP servers have server side logic that interact with the database, they respond with dynamic content.. 
+  * They expose business logic to the clients which generates dynamic content. It is a framework that transforms data to provide the specialized functionality offered by a business, service, or application. Application servers enhance the interactive parts of a website that can appear differently depending on the context of the request
+
+|   WEB SERVER  | APP SERVER  |
+| ------- | ------------ |
+| Delivers Static Content | Delivers dynamic content |
+| Content is delivered using the HTTP protocol | Provides business logic to the application programs using several protocols, including HTTP |
+| Servers only web-based applications | Server web and enterprise-based application |
+| No support for multi-threading | Uses multi-threading to support multiple request in parallel |
+| Facilitates web traffic that is not very resource intensive | Facilitates longer running processes that are very resource-intensive |
