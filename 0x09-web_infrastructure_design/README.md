@@ -176,7 +176,11 @@ A DATABASE Is information that  is set up for **easy access, management and upda
 ## What is the difference between a web server and an app server
   * Web servers have no server side logic, they serve non-dynamic or static content.
   * They accept and fulfill requests from clients for static content, html pages, files, images, videos etc. Web server handle HTTP request only
+  
+  
   ![](images/webserver_vs_appserver.svg)
+  
+  
   * APP servers have server side logic that interact with the database, they respond with dynamic content.. 
   * They expose business logic to the clients which generates dynamic content. It is a framework that transforms data to provide the specialized functionality offered by a business, service, or application. Application servers enhance the interactive parts of a website that can appear differently depending on the context of the request
 
@@ -212,3 +216,37 @@ A DATABASE Is information that  is set up for **easy access, management and upda
 <img src="https://desk.zoho.com/DocsDisplay?zgId=6017018&mode=inline&blockId=ahspd33c576901a764b2eb7a18ca4e428753f" width="500" height="200">
 
 >>  **These days the two most important uses for TXT record types are email spam prevention and domain ownership.** 
+
+## Single point of failure
+SPOF is a part of a system that, if it fails, the entire system will stop working. They are, obviously, undesirable.
+
+## How to avoid downtime when deploying new code
+Using load-balancers, have separate failover locations. 
+Example of how to avoid downtime with a sample network infrastructure consisting of:
+*1 load balancer*
+*2 web server (A & B)*
+*2 DBs (M & N)*
+  * You disconnect Webserver A from load balancer and move all incoming traffic to Webserver B
+  * Update Webserver A, point the configuration to DB server M
+  * Test that the updated version works
+  * All current sessions are kept in webserver B and all new ones go to the newly updated webserver A
+  * Wait for all sessions in B to expire and once that happens…
+  * Disconnect B and update it and DB N.
+  * Test that B is working after being updated
+  * Set the load balancer to regular operation
+
+## High availability cluster (active-active/active-passive)
+HA or High Availability architecture is a characteristic of a system that aims to ensure a certain level of “up time”.
+
+### There are three principles behind HA:
+*  Elimination of SPOF, so, adding redundancy.
+* Reliable crossover, meaning, if one of the redundancy systems fall down the process of moving the operation to one of the redundant system doesn’t become a point of failure itself.
+* Detection of failures as they happen.
+
+### Active-active vs active-passive:
+**Active-active cluster** is usually made up of at least two nodes, both actively running the same kind of service. And its main purpose is to achieve load balancing.
+<img src="https://www.jscape.com/hubfs/images/active_active_high_availability_cluster_load_balancer.png" height="200" width="400"/>
+
+**Active-passive cluster** like the other configuration consist of at least two nodes, but one is on and working (active) and the other is off and waiting (passive). The passive one is waiting for a fallover in case the active node fails or gets overwhelmed. 
+
+<img src="https://www.jscape.com/hubfs/images/active_passive_high_availability_cluster.png" height="200" width="400">
