@@ -134,7 +134,7 @@ The major benefits of a HTTPS certificate are:
 * Visitors can verify you are a registered business and that you own the domain
 * Customers are more likely to trust and complete purchases from sites that use HTTPS
 
-
+<img src="http://apachebooster.com/kb/wp-content/uploads/2017/11/types-of-load-balancing-algorithm.jpeg" width="400" height="200"/>
 ## Load Balancer
 A load balancer is a way to handle huge amounts of traffic by distributing the workload dynamically between servers. 
 
@@ -149,3 +149,4 @@ There are both types of load balancers; hardware and software. They offer a mult
   * **Least connections**: The system passes a new connection to the server with the least connections.
   * **Observed**: Is a combination of Fastest and Least connections. With this method available, servers are ranked based on a combination of the number of connections they are currently handling and how fast they are responding.
   * **Predictive**: Like Observed but taken to the next level. It tries to get ahead of the curve by analyzing the trend of ranking over time... determining whether a server performance is currently improving or declining.
+<img src="https://www.dnsstuff.com/wp-content/uploads/2020/01/the-five-most-common-balancing-methods-1024x536.jpg" width="400" height="200"/>
