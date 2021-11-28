@@ -105,3 +105,31 @@ In networking terms is really similar but you need to know that TCP/IP and both 
   * A firewall is a network security device that monitors incoming and outgoing network traffic and controls the flow of traffic.
   > * Like a first line of defense
   * They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet. 
+
+
+## What is HTTPS
+<img src="https://www.instantssl.com/images/http-vs-https.png" width="400" height="200"/>
+
+HyperText Transfer Protocol Secure (HTTPS) is the secure version of HTTP.  These are protocols that send data between the browser and the website  you’re connected to.  HTTPS, *‘s’ * at the end makes it secure and makes all the communication between browser and websites encrypted. Https is good for confidentially.  Like when you want to make a transaction..
+
+<img src="https://pics.me.me/http-a-secure-https-me-irl-meirl-lmao-40257491.png" width="400" height="350">
+
+** *The padlock means the website is secure.*** 
+### How HTTPS works:
+There are 2 secure protocols that hhtps usually use. SSL(secure Sockets Layer) or TLS(Transport Layer Security). Both protocols are known as asymmetric (PKI)Public key infrastructure systems, which use 2 keys to encrypt communications. Here is where a public key and private key come to play. Anything that is encrypted by a public key can only be accessed/decrypted by a private key and vice-versa. 
+
+Private keys are private, which means that they should only be accessed by  its owner.  In websites private keys remain secure on the web server. The public key is open to anyone and everyone that needs to be able to decrypt information that was encrypted with the private key.
+
+### Requesting https connection to a webpage:
+1. Website sends request to it’s SSL certificate to your browser
+> Certificate holds public key that's needed to begin secure session
+2. Depending on the initial exchange, the website starts the SSL handshake.
+> This involves generation of shared secrets, to establish a UNIQUE secure connection between user and the website.
+<img src="https://i.stack.imgur.com/oH2tP.png" width="400" height="200"/>
+<img src="https://sectigostore.com/page/wp-content/uploads/2019/10/anatamy-of-digital-certificate.png" width="400" height="200"/>
+
+### Benefits of Hypertext Transfer Protocol Secure
+The major benefits of a HTTPS certificate are:
+* Customer information, like credit card numbers, is encrypted and cannot be intercepted
+* Visitors can verify you are a registered business and that you own the domain
+* Customers are more likely to trust and complete purchases from sites that use HTTPS
