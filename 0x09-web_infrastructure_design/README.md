@@ -90,3 +90,18 @@ At the same time someone else calls but need to talk to the boss, which is on th
 <img src="https://i0.wp.com/ipwithease.com/wp-content/uploads/2020/06/IP-ADDRESS-AND-PORT-NUMBER.jpg" width="400" height="200"/>
 
 In networking terms is really similar but you need to know that TCP/IP and both TCP and UPD use a set of ports that work together with IP addresses. There are more than 60k ports between udp and tcp, and some of them are reserved for common applications as an standard, say HTTP which used port :80 or https which uses port :443
+
+## what is a FIREWALL
+<img src="https://www.howtogeek.com/wp-content/uploads/2013/04/firewall-diagram.png?width=1198&trim=1,1&bg-color=000&pad=1,1" width="400" height="200">
+
+  * It’s like a house dence that prevents hackers from penetrating your computer.
+  >* Access a defense system for a local computer. That protects it from any attack. 
+>>* Can be a software like a security program.
+ >> * Or can be Hardware like a physical router
+  >* Scan a packet of data. 
+  >> * Packet of data: small chunk of a larger whole which  is reduced in size for easy transmission. 
+  >> * Firewalls make sure those packages don’t have anything bad
+  >>> * Common features are  login and reporting of attacks. Success or failure, slow down of traffic. 
+  * A firewall is a network security device that monitors incoming and outgoing network traffic and controls the flow of traffic.
+  > * Like a first line of defense
+  * They establish a barrier between secured and controlled internal networks that can be trusted and untrusted outside networks, such as the Internet. 
