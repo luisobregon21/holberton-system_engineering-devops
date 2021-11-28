@@ -245,6 +245,7 @@ HA or High Availability architecture is a characteristic of a system that aims t
 
 ### Active-active vs active-passive:
 **Active-active cluster** is usually made up of at least two nodes, both actively running the same kind of service. And its main purpose is to achieve load balancing.
+
 <img src="https://www.jscape.com/hubfs/images/active_active_high_availability_cluster_load_balancer.png" height="200" width="400"/>
 
 **Active-passive cluster** like the other configuration consist of at least two nodes, but one is on and working (active) and the other is off and waiting (passive). The passive one is waiting for a fallover in case the active node fails or gets overwhelmed. 
