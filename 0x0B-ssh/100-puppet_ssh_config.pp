@@ -4,7 +4,7 @@ include stdlib
 file_line {'change private key':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => 'IdentifyFile ~/.ssh/school'
+  line   => 'IdentityFile ~/.ssh/school'
 }
 file_line {'no password':
   ensure => present,
