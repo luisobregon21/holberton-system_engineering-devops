@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# script Installs and setup apache on docker
-apt-get update
-apt-get -y install apache2
-echo "ServerName localhost" >> /etc/apache2/conf-available/servername.conf
-service apache2 restart
+# script installs apache and runs it in the docker container
+
+service apache2 start
