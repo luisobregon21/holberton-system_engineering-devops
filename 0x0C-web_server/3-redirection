@@ -2,12 +2,7 @@
 # Intsalls NGINX web server on web-01 server
 
 # installs NGINX
-apt update
+apt-get update
 apt-get -y install nginx
-
-echo "Hello World" > /var/www/html/index.nginx-debian.html
-
-new_string="rewrite ^/redirect_me http://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
-sed -i "$new_string/" /etc/nginx/sites-available/default
-
+sed -i '24 i \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4i permanent;' /etc/nginx/sites-enabled/default
 service nginx restart
