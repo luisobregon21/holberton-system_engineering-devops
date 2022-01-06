@@ -7,7 +7,3 @@ touch /var/www/html/404.html
 echo "Ceci n'est pas une page" > /var/www/html/404.html
 sed -i '25 i \\terror_page 404 /404.html;' /etc/nginx/sites-enabled/default
 service nginx restart
-touch /var/www/html/404.html
-echo "Ceci n'est pas une page" > /var/www/html/404.html
-sed -i '25 i \\terror_page 404 /404.html;' /etc/nginx/sites-enabled/default
-service nginx restart
