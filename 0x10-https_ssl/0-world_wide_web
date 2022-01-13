@@ -3,7 +3,7 @@
 
 details() {
 	dig "$2.$1" | awk '/;; ANSWER SECTION/ {getline;
-	printf "The subdomain %s is a %s record and points to %s\n", S_D, $3, $5}' S_D="$2"
+	printf "The subdomain %s is a %s record and points to %s\n", S_D, $4, $5}' S_D="$2"
 }
 
 if [ $# -gt 1 ]
