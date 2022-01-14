@@ -38,8 +38,8 @@ frontend load_balancer
     bind *:80
     mode http
     default_backend webserver
+
 backend webserver
     balance roundrobin
     server 3240-web-01 34.139.237.184:80 check
     server 3240-web-02 3.80.64.94:80 check
-o
