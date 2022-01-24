@@ -1,7 +1,7 @@
 *nat
-:PREROUTING ACCEPT - [0:0]
+:PREROUTING - [0:0]
 
-iptables -t nat -A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
 
 # don't delete the 'COMMIT' line or these nat table rules won't be processed
 COMMIT
@@ -34,7 +34,7 @@ COMMIT
 -A ufw-before-output -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 -A ufw-before-forward -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 
-# drop INVALID packets (logs thesein loglevel medium and higher)
+# drop INVALID packets (logs these in loglevel medum and higher)
 -A ufw-before-input -m conntrack --ctstate INVALID -j ufw-logging-deny
 -A ufw-before-input -m conntrack --ctstate INVALID -j DROP
 
