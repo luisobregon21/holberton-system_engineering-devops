@@ -1,0 +1,12 @@
+sudo ufw enable
+
+# SSH
+sudo ufw allow 22/tcp
+# HTTPS SSL
+sudo ufw allow 443/tcp
+# HTTP
+sudo ufw allow 80/tcp
+
+# restarts firewall
+sudo ufw disable
+sudo ufw enable
