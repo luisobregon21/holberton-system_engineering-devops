@@ -14,8 +14,11 @@ if __name__ == '__main__':
         dic = request.json()
         num = 0
         taskname = ""
-        with open("USER_ID.csv", 'w', encoding='utf-8') as csv:
-            for task in dic:
-                csv.write('"{}","{}","{}","{}"\n'.format(
-                    argv[1], usr, task["completed"], task['title']))
-            csv.close()
+        try:
+            with open("USER_ID.csv", 'w', encoding='utf-8') as csv:
+                for task in dic:
+                    csv.write('"{}","{}","{}","{}"\n'.format(
+                        argv[1], usr, task["completed"], task['title']))
+                csv.close()
+        except:
+            pass
