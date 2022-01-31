@@ -5,10 +5,6 @@
   </p>
 
 
-<p align="center">
-  <img src="https://memegenerator.net/img/instances/64660222.jpg" width="750" height="300" title="meme">
-  </p>
-
 ## Resources
 Read or watch:
 
@@ -33,6 +29,11 @@ Pythonic Function name style
 Pythonic Constant name style
 Significance of CapWords or CamelCase in Python
 
+
+<p align="center">
+  <img src="https://memegenerator.net/img/instances/64660222.jpg" width="750" height="400" title="meme">
+  </p>
+  
 # Requirements
 
 ## General
