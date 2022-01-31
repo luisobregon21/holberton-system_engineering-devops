@@ -15,6 +15,6 @@ if __name__ == '__main__':
         for task in dic:
             if task['completed'] is True:
                 num += 1
-                taskname += "  " + task['title'] + '\n'
+                taskname += "\t " + task['title'] + '\n'
         print("Employee {} is done with tasks({}/20):".format(usr, num))
         print(taskname, end="")
