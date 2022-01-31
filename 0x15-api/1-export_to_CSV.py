@@ -15,7 +15,7 @@ if __name__ == '__main__':
         num = 0
         taskname = ""
         try:
-            with open("USER_ID.csv", 'w', encoding='utf-8') as csv:
+            with open(argv[1] + ".csv", 'w', encoding='utf-8') as csv:
                 for task in dic:
                     csv.write('"{}","{}","{}","{}"\n'.format(
                         argv[1], usr, task["completed"], task['title']))
