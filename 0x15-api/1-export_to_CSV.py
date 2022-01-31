@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 ''' returns information about his/her TODO list progress '''
 
 import os
@@ -14,7 +14,8 @@ if __name__ == '__main__':
         dic = request.json()
         num = 0
         taskname = ""
-        with open ("USER_ID.csv", 'w', encoding='utf-8') as csv:
+        with open("USER_ID.csv", 'w', encoding='utf-8') as csv:
             for task in dic:
-                csv.write('"{}","{}","{}","{}"\n'.format(argv[1], usr, task["completed"], task['title']))
+                csv.write('"{}","{}","{}","{}"\n'.format(
+                    argv[1], usr, task["completed"], task['title']))
             csv.close()
