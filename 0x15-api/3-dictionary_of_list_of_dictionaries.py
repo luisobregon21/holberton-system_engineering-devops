@@ -34,7 +34,10 @@ if __name__ == '__main__':
                     if num < d_len:
                         json.write('}, ')
                         num += 1
-                json.write('}]')
+                if idx < 10:
+                    json.write('}],')
+                else:
+                    json.write('}]')
             json.write('}')
     except:
         pass
