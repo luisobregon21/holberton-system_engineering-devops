@@ -16,7 +16,10 @@ if __name__ == '__main__':
             for idx in range(1, 11):
                 usr = requests.get(url+'users/{:d}'.format(idx)).json()["username"]
                 request = requests.get(url+'todos?userId={}'.format(idx))
-                json.write(' "{}": ['.format(idx))
+                if idx == 1:
+                    json.write('"{}": ['.format(idx))
+                else:
+                    json.write(' "{}": ['.format(idx))
                 dic = request.json()
                 num = 0
                 d_len = len(dic) - 1
