@@ -14,7 +14,8 @@ if __name__ == '__main__':
         with open("todo_all_employees.json", 'w', encoding='utf-8') as json:
             json.write('{')
             for idx in range(1, 11):
-                usr = requests.get(url+'users/{:d}'.format(idx)).json()["username"]
+                usr = requests.get(
+                    url+'users/{:d}'.format(idx)).json()["username"]
                 request = requests.get(url+'todos?userId={}'.format(idx))
                 if idx == 1:
                     json.write('"{}": ['.format(idx))
