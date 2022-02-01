@@ -24,7 +24,7 @@ if __name__ == '__main__':
                         low = "true"
                     else:
                         low = "false"
-                    json.write('{' + '"username": "{}, "'.format(usr))
+                    json.write('{' + '" username": "{}, "'.format(usr))
                     json.write('"task": "{}", '.format(task['title']))
                     json.write('"completed": {}'.format(low))
                     if num < d_len:
