@@ -12,10 +12,11 @@ if __name__ == '__main__':
     url = 'https://jsonplaceholder.typicode.com/'
     try:
         with open("todo_all_employees.json", 'w', encoding='utf-8') as json:
+            json.write('{ ')
             for idx in range(1, 11):
                 usr = requests.get(url+'users/{:d}'.format(idx)).json()["username"]
                 request = requests.get(url+'todos?userId={}'.format(idx))
-                json.write('{ '+'"{}": ['.format(idx))
+                json.write('"{}": [ '.format(idx))
                 dic = request.json()
                 num = 0
                 d_len = len(dic) - 1
